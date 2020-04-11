@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipality</title>
+</head>
+<body>
+    <h3>To avail the service , please fill the form</h3>
+    <form action="#" method="POST" style="border: 1px solid black; padding: 2rem; width: 50%">
+        {% csrf_token %}
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="name" id="name"><br><br>
+        <label for="address">Address:</label>
+        <input type="text" name="address" value="address"><br><br>
+        <label>Specify the requirements:</label><br><br>
+        <input type="radio" name="food" id ="food" value="food">
+        <label for="">Food</label><br>
+        <input type="radio" name="money" id ="money" value="money">
+        <label for="">Money</label><br>
+        <input type="radio" name="health" id ="health" value="health">
+        <label for="">Health Aids</label><br>
+        <input type="radio" name="shelter" id ="shelter" value="shelter">
+        <label for="">Shelter</label><br>
+        <input type="radio" name="transport" id ="transport" value="transport">
+        <label for="transport">Transport</label><br>
+        <input type="radio" name="water" id ="water" value="water">
+        <label for="water">Drinking water</label><br>
+        <label for="others"></label><br>
+       <textarea name="others" id="others" cols="30" rows="10">If any other needs, specify here...</textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
